@@ -7,8 +7,6 @@ import java.util.List;
  */
 public interface Transformer {
 
-    String EMPTY_STRING_QUOTES = "''";
-
     Transaction transform(List<String> row);
 
 }

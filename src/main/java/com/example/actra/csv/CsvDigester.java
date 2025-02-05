@@ -20,7 +20,6 @@ public class CsvDigester {
 
     private static final char SEMICOLON = ';';
     private static final char QUOTE_SINGLE = '\'';
-    private static final String UTF8_BOM = "\uFEFF";
 
     public static void digest(InputStream inputStream, Consumer<Transaction> consumer) {
 
