@@ -23,7 +23,7 @@ public class CsvTest {
 
         try (InputStream is = Files.newInputStream(filePath1)) {
 
-            CsvDigester.digest(is, tr -> {});
+            CsvDigester.digest(is, System.out::println);
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
@@ -33,7 +33,7 @@ public class CsvTest {
 
         try (InputStream is = Files.newInputStream(filePath2)) {
 
-            CsvDigester.digest(is, tr -> {});
+            CsvDigester.digest(is, System.out::println);
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
