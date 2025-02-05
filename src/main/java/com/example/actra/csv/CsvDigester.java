@@ -36,11 +36,6 @@ public class CsvDigester {
 
             String[] row = reader.readNext();
 
-//            int len = row.length;
-//            if (len > 0) {
-//                row[0] = removeUTF8BOM(row[0]);
-//            }
-
             Provider provider = selector.resolveProvider(row);
 
             if (provider == null) {
@@ -66,13 +61,6 @@ public class CsvDigester {
             e.printStackTrace();
         }
 
-    }
-
-    private static String removeUTF8BOM(String str) {
-        if (str.startsWith(UTF8_BOM)) {
-            str = str.substring(1);
-        }
-        return str;
     }
 
 }
