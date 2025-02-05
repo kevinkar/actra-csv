@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Run application" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="com.example.actra.csv.CsvTest" />
-    <module name="actra-csv" />
-    <method v="2">
-      <option name="Make" enabled="true" />
-    </method>
-  </configuration>
-</component>
