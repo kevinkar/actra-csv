@@ -1,6 +1,6 @@
 package com.example.actra.csv;
 
-import com.example.actra.csv.impl.providers.ProviderSelector;
+import com.example.actra.csv.impl.ProviderSelector;
 import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;

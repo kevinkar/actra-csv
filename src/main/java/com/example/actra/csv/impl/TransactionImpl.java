@@ -5,7 +5,7 @@ import com.example.actra.csv.Transaction;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class TransactionImpl implements Transaction {
+class TransactionImpl implements Transaction {
 
     private LocalDate bookingDate;
     private BigDecimal amount;
