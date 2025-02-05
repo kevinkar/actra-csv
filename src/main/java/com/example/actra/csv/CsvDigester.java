@@ -25,7 +25,8 @@ public class CsvDigester {
     public static void digest(InputStream inputStream, Consumer<Transaction> consumer) {
 
         // Wrap the input stream in a BOMInputStream to get rid of the BOM
-        try (CSVReader reader = new CSVReaderBuilder(new InputStreamReader(new BOMInputStream(inputStream), StandardCharsets.UTF_8))
+        try (CSVReader reader = new CSVReaderBuilder(
+                new InputStreamReader(BOMInputStream.builder().setInputStream(inputStream).get(), StandardCharsets.UTF_8))
                 .withCSVParser(new CSVParserBuilder()
                         .withSeparator(SEMICOLON)
                         .withQuoteChar(QUOTE_SINGLE).build())
